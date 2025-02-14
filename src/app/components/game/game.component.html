@@ -1,0 +1,21 @@
+
+<div class="game-container">
+  <h1>Encuentra el camino</h1>
+  <hr>
+  <h2>Comienza</h2>
+</div>
+<div class="grid">
+  <button *ngFor="let cell of grid; let i = index" 
+          [ngClass]="{'correct': cell.revealed, 'wrong': cell.revealed && cell.status === 'wrong'}"
+          [disabled]="cell.disabled"
+          (click)="checkPath(i)">
+    {{ cell.revealed ? (cell.status === 'correct' ? '✔' : 'X') : '?' }}
+  </button>
+</div>
+
+
+
+
+
+
+

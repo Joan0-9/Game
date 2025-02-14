@@ -1,0 +1,19 @@
+<div class="treasure-container">
+
+  <div *ngIf="showAnimation" class="congrats-container">
+    <img id="congrats-img" src="../../../assets/ratonmeme.jpg" alt="Felicidades" />
+  </div>
+  
+
+  <h2>¡Felicidades! Descubriste que alguien quiere hablar contigo.</h2>
+  <p>¿Te animas?</p>
+
+  <div class="container">
+    <button (click)="toggleQR()">📲 Haz clic aquí</button>
+  
+    <div *ngIf="mostrarQR" class="qr-container">
+      <qrcode [qrdata]="whatsappLink" [width]="200" [errorCorrectionLevel]="'M'"></qrcode>
+    </div>
+  
+</div>
+
