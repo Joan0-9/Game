@@ -13,7 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/inicio",
+            "outputPath":"docs",
+            "baseHref": "/Game/",
+            "deployUrl": "/Game/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
