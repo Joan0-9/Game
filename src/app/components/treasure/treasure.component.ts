@@ -15,7 +15,7 @@ export class TreasureComponent implements OnInit {
   constructor() { }
 
   showAnimation: boolean = true;
-  audio = new Audio('asssets/meme.mp3');
+  audio = new Audio('asssets/audio/meme.mp3');
 
   ngOnInit(): void {
     this.playSound();
